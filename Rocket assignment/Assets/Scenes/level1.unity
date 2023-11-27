@@ -1141,7 +1141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1886509805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1180,6 +1180,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3257280337540101702, guid: bff24325ee1fb4a43a70b4671c7993d1, type: 3}
+      propertyPath: isAlive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257280337540101702, guid: bff24325ee1fb4a43a70b4671c7993d1, type: 3}
+      propertyPath: onLivesGone
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257280337794737118, guid: bff24325ee1fb4a43a70b4671c7993d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8472845898245715468, guid: bff24325ee1fb4a43a70b4671c7993d1, type: 3}
       propertyPath: m_Name
       value: game
