@@ -8,7 +8,7 @@ public class Health : MonoBehaviour {
 	public float healthPoints = 1f;
 	public float respawnHealthPoints = 1f;		//base health points
 	
-	public int numberOfLives = 1;					//lives and variables for respawning
+	public int numberOfLives = 1;				//lives and variables for respawning
 	public bool isAlive = true;	
 
 	public GameObject explosionPrefab;
