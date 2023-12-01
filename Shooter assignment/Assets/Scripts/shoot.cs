@@ -6,11 +6,6 @@ public class shoot : MonoBehaviour {
 
     public GameObject projectile;
 
-    // Use this for initialization
-    void Start(){
-
-    }
-
     // Update is called once per frame
     float timer = 10f;
     bool start = false;
@@ -21,7 +16,6 @@ public class shoot : MonoBehaviour {
 
         if (shoot == 1 && timer >= shootRate)//shoot{
         {
-
             GameObject newProjectile = Instantiate(projectile, transform.position + transform.forward, transform.rotation);
             newProjectile.GetComponent<Rigidbody>().AddForce(transform.forward * 100, ForceMode.VelocityChange);
             start = true;

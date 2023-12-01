@@ -4,20 +4,9 @@ using UnityEngine;
 
 public class Hit : MonoBehaviour
 {
-
     // Use this for initialization
     public AudioClip audioClip;
     public GameObject explosionParticle;
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     private void OnTriggerEnter(Collider other)
     {
