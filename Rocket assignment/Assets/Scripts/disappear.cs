@@ -13,7 +13,7 @@ public class disappear : MonoBehaviour
             }
 
             Destroy(gameObject);            // Destroys object
-            gameObject.SetActive(false);    //  Disables object
+            //gameObject.SetActive(false);    //  Disables object
         }
     }
 }
