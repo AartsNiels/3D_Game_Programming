@@ -1,20 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class disappear : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start(){
-        
-    }
-
-    // Update is called once per frame
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerEnter(Collider other)
     {
-        if (col.gameObject.tag == "Player")
-            col.GetComponent<RocketController>().points++;
-            Destroy(gameObject);
-            //col.gameObject.SetActive(false);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            RocketController rocketController = other.GetComponent<RocketController>();
+            if (rocketController != null)
+            {
+                rocketController.points++; // Makes Scores go up
+            }
+
+            Destroy(gameObject);            // Destroys object
+            gameObject.SetActive(false);    //  Disables object
+        }
     }
 }
