@@ -9,7 +9,7 @@ public class disappear : MonoBehaviour
             RocketController rocketController = other.GetComponent<RocketController>();
             if (rocketController != null)
             {
-                rocketController.points++; // Makes Scores go up
+                rocketController.points++;  // Makes Scores go up
             }
 
             Destroy(gameObject);            // Destroys object
